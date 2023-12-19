@@ -1,0 +1,708 @@
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    background-image: url(Images/fantastic-cloudscape.jpg);
+}
+
+.form-stuff {
+    overflow-x: auto;
+    width: 150%;
+    position: relative;
+    margin-top: 150px;
+}
+
+.print-textarea {
+    margin-bottom: 80px;
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 1920px) {
+    .print-textarea {
+        font-size: 13px;
+    }
+
+    /btns -- filter, delete, update and download/
+    #filter-btn {
+        background-color: white;
+        color: #007BFF;
+        border: 1px #007BFF;
+        padding: 8px 15px;
+        cursor: pointer;
+        margin: 5px;
+        border-radius: 5px;
+    }
+
+    #filter-btn:hover {
+        background-color: #c3e5fa; /* Darker background color on hover */
+    }
+
+    #delete-btn {
+        background-color: #e24949;
+        color: white;
+        border: none;
+        padding: 8px 15px;
+        cursor: pointer;
+        margin: 10px 0 10px 0px;
+        border-radius: 5px;
+    }
+
+        #delete-btn:hover {
+            background-color: #a83434; /* Darker background color on hover */
+        }
+
+    #update-btn {
+        background-color: #6cb82c;
+        color: white;
+        border: none;
+        padding: 8px 15px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+        #update-btn:hover {
+            background-color: #4f871f; /* Darker background color on hover */
+        }
+
+    #download-btn {
+        background-color: #1acdef;
+        color: white;
+        border: none;
+        padding: 8px 15px;
+        cursor: pointer;
+        border-radius: 5px;
+        margin-right: 150px;
+    }
+
+        #download-btn:hover {
+            background-color: #034791; /* Darker background color on hover */
+        }
+}
+
+/* For screens between 1080p and 1440p */
+@media screen and (min-width: 1921px) and (max-width: 2560px) {
+    .print-textarea {
+        font-size: 15px;
+    }
+}
+
+/* For screens larger than 1440p, like 2160p (4K) */
+@media screen and (min-width: 2561px) {
+    .print-textarea {
+        font-size: 20px;
+    }
+}
+
+
+
+.test {
+    background-color: transparent;
+    border: none;
+    color: inherit;
+    font-size: inherit;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.test1s {
+    /* Shift the form elements to the left */
+    margin-right: 650px;
+}
+
+.t1 {
+    /* Make the input fields square and small */
+    width: 20px;
+    height: 20px;
+    padding: 0;
+}
+
+.privacy {
+    width: 100%;
+    position: relative;
+    height: 100%;
+    height: 500px;
+    border: none;
+    text-align: center;
+}
+
+.form-container {
+    display: flex;
+    align-items: end;
+    margin-left: 350px;
+}
+
+.stats {
+}
+
+.showuser {
+    background-color: #94d6b8;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 50px
+}
+
+    .showuser:hover {
+        background-color: #6dcfa3; /* Darker background color on hover */
+    }
+
+.filter {
+    position: relative;
+    left: 0px;
+}
+
+form.test1s {
+    float: right;
+}
+
+form.filter {
+    float: left;
+}
+/* styles.css */
+.Webbody {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.Webcontainer {
+    text-align: center;
+    padding: 100px 0;
+    border-radius: 20px;
+}
+
+    .Webcontainer h1 {
+        font-size: 60px;
+        color: white;
+    }
+
+.verse {
+    width: 100%;
+    height: 150px;
+    padding: 30px;
+    background-color: rgb( 255, 255, 255, 0.25 );
+    border-radius: 20px;
+}
+
+    .verse h2 {
+        text-align: center;
+    }
+
+    .verse p {
+        text-align: center;
+        font-weight: 700;
+    }
+
+.events {
+    width: 100%;
+    margin-top: 50px;
+    padding: 30px;
+    background-color: rgb( 1, 5, 38, 0.75 );
+    border-radius: 20px;
+}
+
+    .events h2 {
+        color: white
+    }
+
+    .events h3 {
+        color: white
+    }
+
+.news {
+    width: 100%;
+    margin-top: 70px;
+    margin-bottom: 50px;
+    padding: 30px;
+    background-color: rgb( 255, 255, 255);
+    border-radius: 20px;
+}
+
+.news-body {
+}
+
+.Webheader {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.Websubheader {
+    font-size: 1.5rem;
+    color: lightgray;
+}
+
+
+.text-center {
+    text-align: center;
+    font-size: 50px
+}
+
+
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    border: 1px solid #ddd;
+    background-color: #dffad9;
+    align-items: center;
+    margin-top: 50px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        background-color: #def2da;
+    }
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #9bf1f2;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+    .button:hover {
+        background-color: #94e2e3;
+        color: white;
+    }
+/* About-US form */
+.AboutUsModern-form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #C7E4D9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.AboutUsForm-group {
+    margin-bottom: 15px;
+}
+
+AboutUslabel {
+    font-weight: bold;
+}
+
+.AboutUsForm-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #d3f2e6;
+    border-radius: 3px;
+}
+
+select.AboutUsForm-control {
+    height: 40px;
+}
+
+textarea.AboutUsForm-control {
+    resize: vertical;
+}
+
+.AboutUsBtn-primary {
+    padding: 10px 20px;
+    background-color: #afcede;
+    border: none;
+    color: black;
+    border-radius: 3px;
+    position: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+    .AboutUsBtn-primary:hover {
+        background-color: #afcede;
+        color: white;
+    }
+
+
+
+.new-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.image {
+    width: 400px;
+    height: 400px;
+}
+
+/* Apply styles only to the Privacy Policy page */
+.privacy-page {
+    margin: 0;
+    padding: 0;
+}
+
+.privacy-body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+}
+
+.privacy-header {
+    color: white;
+    text-align: center;
+}
+
+.privacy-logo {
+    max-width: 100%;
+    height: 500px;
+    justify-content: center;
+    border: none;
+}
+
+
+.privacy-heading {
+    font-size: 32px;
+    margin-top: 10px;
+    text-align: left;
+    font-family: cursive;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.privacy-main {
+    max-width: 550px;
+    margin: auto;
+    padding: 5px;
+    background-color: #fff;
+}
+
+.privacy-content p {
+    margin-bottom: 1px;
+}
+
+/* Media query for responsive design */
+@media (max-width: 768px) {
+    .privacy-main {
+    }
+}
+
+.copyright-year {
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+
+
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+}
+
+    footer .container {
+        text-align: center;
+    }
+
+.fb-post {
+    margin-bottom: 15px;
+}
+
+.fb-post-header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.fb-post-profile-picture {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.fb-post-info {
+    margin-left: 10px;
+}
+
+.fb-post-author {
+    font-weight: bold;
+}
+
+.fb-post-date {
+    color: #777;
+}
+
+.fb-post-content {
+    padding: 10px;
+}
+
+.fb-post-footer {
+    padding: 10px;
+}
+
+/*/code below done by kiolin harisanker - st10091180/
+*/
+.container {
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 20px
+}
+
+
+.nav-link {
+    color: black;
+    cursor: pointer;
+    position: relative;
+    font-size: 15px;
+}
+
+    .nav-link:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 5px;
+        bottom: -10px;
+        left: -4px;
+        transform: scaleX(0);
+        background: #89b888;
+        color: black;
+        transform-origin: bottom right;
+        transition: transform 0.5s ease-out;
+        font-size: 25px;
+    }
+
+    .nav-link:hover:after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+        color: #89b888;
+    }
+
+#navbar {
+    width: 80%;
+}
+
+    #navbar ul li {
+        list-style: none;
+        display: inline-block;
+    }
+/*
+/ounter -- pastor & church/*/
+
+.customcount {
+    width: 250px;
+    height: 70px;
+    background-color: #5db5fe;
+    color: white;
+    border-radius: 4px;
+    border: none;
+    font-size: 25px;
+    text-align: center;
+    margin: 40px 20px;
+}
+
+#churchcount {
+    width: 250px;
+    height: 70px;
+    background-color: #f1c94b;
+    color: white;
+    border-radius: 4px;
+    border: none;
+    font-size: 25px;
+    text-align: center;
+    margin: 40px 20px;
+}
+
+/*/btns -- filter, delete, update and download/*/
+#filter-btn {
+    background-color: white;
+    color: #007BFF;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 10px 0 10px 0px;
+    border-radius: 5px;
+}
+
+    #filter-btn:hover {
+        background-color: #c3e5fa; /* Darker background color on hover */
+    }
+
+#delete-btn {
+    background-color: #e24949;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 10px 0 10px 0px;
+    border-radius: 5px;
+}
+
+    #delete-btn:hover {
+        background-color: #a83434; /* Darker background color on hover */
+    }
+
+#update-btn {
+    background-color: #6cb82c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+    #update-btn:hover {
+        background-color: #4f871f; /* Darker background color on hover */
+    }
+
+#download-btn {
+    background-color: #1acdef;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 300px;
+}
+
+    #download-btn:hover {
+        background-color: #034791; /* Darker background color on hover */
+    }
+
+/* Style the table */
+#custom-table {
+    border-collapse: collapse;
+    width: auto;
+}
+
+    /* Style the table headers (th) */
+    #custom-table th {
+        background-color: #007BFF;
+        color: white;
+        font-weight: bold;
+        padding: 10px;
+        text-align: left;
+    }
+
+    /* Style alternating rows (tr) */
+    #custom-table tr:nth-child(even) {
+        background-color: #f2f2f2; /* Light grey background color for even rows */
+    }
+
+    #custom-table tr:nth-child(odd) {
+        background-color: white; /* White background color for odd rows */
+    }
+
+    /* Style table cells (td) */
+    #custom-table td {
+        padding: 10px;
+        border-bottom: 1px solid #ddd; /* Add lines underneath each row */
+    }
+
+#aboutus_heading {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 40px;
+}
+
+#aboutus_heading_main {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: -80px
+}
+
+#aboutus_p {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+#aboutus_p_last {
+    font-size: 16px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+#aboutus_p_last_line {
+    font-size: 30px;
+    text-align: center;
+    font-weight: bolder;
+    margin-top: 30px;
+}
+
+#aboutus_p_span {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.about_us_view {
+    background-color: rgb( 255, 255, 255, 0.65 );
+    border-radius: 20px;
+}
+
+.privacy-view {
+    background-color: rgb( 255, 255, 255, 0.65 );
+    border-radius: 20px;
+}
+
+.login-register-view {
+    padding: 20px;
+    background-color: rgb( 153, 187, 247, 0.65 );
+    border-radius: 20px;
+}
+
+#forgot-password {
+    color: red;
+    font-weight: bold;
+}
+
+    #forgot-password:hover {
+        color: #c20202;
+    }
+
+#resend-confirmation {
+    color: red;
+    font-weight: bold;
+}
+
+    #resend-confirmation:hover {
+        color: #c20202;
+    }

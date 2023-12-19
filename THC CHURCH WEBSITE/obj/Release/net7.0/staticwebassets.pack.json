@@ -1,0 +1,349 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\rough\\source\\repos\\THC CHURCH WEBSITE\\THC CHURCH WEBSITE\\obj\\Release\\net7.0\\scopedcss\\projectbundle\\THC CHURCH WEBSITE.bundle.scp.css",
+      "PackagePath": "staticwebassets\\THC CHURCH WEBSITE.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\rough\\source\\repos\\THC CHURCH WEBSITE\\THC CHURCH WEBSITE\\wwwroot\\css\\Images\\1937263_582229528597959_4989990945431031213_n.jpg",
+      "PackagePath": "staticwebassets\\css\\Images\\1937263_582229528597959_4989990945431031213_n.jpg"
+    },
+    {
+      "Id": "C:\\Users\\rough\\source\\repos\\THC CHURCH WEBSITE\\THC CHURCH WEBSITE\\wwwroot\\css\\Images\\Apostle BC Nsingwane - Founder of the HTC.jpg",
+      "PackagePath": "staticwebassets\\css\\Images\\Apostle BC Nsingwane - Founder of the HTC.jpg"
+    },
+    {
+      "Id": "C:\\Users\\rough\\source\\repos\\THC CHURCH WEBSITE\\THC CHURCH WEBSITE\\wwwroot\\css\\Images\\Evangelist GV Nsingwane - Matsulu Worship Center.jpg",
+      "PackagePath": "staticwebassets\\css\\Images\\Evangelist GV Nsingwane - Matsulu Worship Center.jpg"
+    },
+    {
+      "Id": "C:\\Users\\rough\\source\\repos\\THC CHURCH WEBSITE\\THC CHURCH WEBSITE\\wwwroot\\css\\Images\\Evangelist Mahlalela.jpg",
+      "PackagePath": "staticwebassets\\css\\Images\\Evangelist Mahlalela.jpg"
+    },
+    {
+      "Id": "C:\\Users\\rough\\source\\repos\\THC CHURCH WEBSITE\\THC CHURCH WEBSITE\\wwwroot\\css\\Images\\Evangelist Malungisa.jpeg",
+      "PackagePath": "staticwebassets\\css\\Images\\Evangelist Malungisa.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\rough\\source\\repos\\THC CHURCH WEBSITE\\THC CHURCH WEBSITE\\wwwroot\\css\\Images\\NewChurchCIlogo.png",
+      "PackagePath": "staticwebassets\\css\\Images\\NewChurchCIlogo.png"
+    },
+    {
+      "Id": "C:\\Users\\rough\\source\\repos\\THC CHURCH WEBSITE\\THC CHURCH WEBSITE\\wwwroot\\css\\Images\\Pastor AP Khoza - Magudu Worship Center.jpg",
+      "PackagePath": "staticwebassets\\css\\Images\\Pastor AP Khoza - Magudu Worship Center.jpg"
+    },
+    {
+      "Id": "C:\\Users\\rough\\source\\repos\\THC CHURCH WEBSITE\\THC CHURCH WEBSITE\\wwwroot\\css\\Images\\Prophet TL Ndlala - Lead Shephered.jpg",
+      "PackagePath": "staticwebassets\\css\\Images\\Prophet TL Ndlala - Lead Shephered.jpg"
+    },
+    {
+      "Id": "C:\\Users\\rough\\source\\repos\\THC CHURCH WEBSITE\\THC CHURCH WEBSITE\\wwwroot\\css\\Images\\facebook-icon.png.jpeg",
+      "PackagePath": "staticwebassets\\css\\Images\\facebook-icon.png.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\rough\\source\\repos\\THC CHURCH WEBSITE\\THC CHURCH WEBSITE\\wwwroot\\css\\Images\\fantastic-cloudscape.jpg",
+      "PackagePath": "staticwebassets\\css\\Images\\fantastic-cloudscape.jpg"
+    },
+    {
+      "Id": "C:\\Users\\rough\\source\\repos\\THC CHURCH WEBSITE\\THC CHURCH WEBSITE\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\rough\\source\\repos\\THC CHURCH WEBSITE\\THC CHURCH WEBSITE\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\rough\\source\\repos\\THC CHURCH WEBSITE\\THC CHURCH WEBSITE\\wwwroot\\favicon_package_v0.16.zip",
+      "PackagePath": "staticwebassets\\favicon_package_v0.16.zip"
+    },
+    {
+      "Id": "C:\\Users\\rough\\source\\repos\\THC CHURCH WEBSITE\\THC CHURCH WEBSITE\\wwwroot\\favicon_package_v0.16\\android-chrome-192x192.png",
+      "PackagePath": "staticwebassets\\favicon_package_v0.16\\android-chrome-192x192.png"
+    },
+    {
+      "Id": "C:\\Users\\rough\\source\\repos\\THC CHURCH WEBSITE\\THC CHURCH WEBSITE\\wwwroot\\favicon_package_v0.16\\android-chrome-384x384.png",
+      "PackagePath": "staticwebassets\\favicon_package_v0.16\\android-chrome-384x384.png"
+    },
+    {
+      "Id": "C:\\Users\\rough\\source\\repos\\THC CHURCH WEBSITE\\THC CHURCH WEBSITE\\wwwroot\\favicon_package_v0.16\\apple-touch-icon.png",
+      "PackagePath": "staticwebassets\\favicon_package_v0.16\\apple-touch-icon.png"
+    },
+    {
+      "Id": "C:\\Users\\rough\\source\\repos\\THC CHURCH WEBSITE\\THC CHURCH WEBSITE\\wwwroot\\favicon_package_v0.16\\browserconfig.xml",
+      "PackagePath": "staticwebassets\\favicon_package_v0.16\\browserconfig.xml"
+    },
+    {
+      "Id": "C:\\Users\\rough\\source\\repos\\THC CHURCH WEBSITE\\THC CHURCH WEBSITE\\wwwroot\\favicon_package_v0.16\\favicon-16x16.png",
+      "PackagePath": "staticwebassets\\favicon_package_v0.16\\favicon-16x16.png"
+    },
+    {
+      "Id": "C:\\Users\\rough\\source\\repos\\THC CHURCH WEBSITE\\THC CHURCH WEBSITE\\wwwroot\\favicon_package_v0.16\\favicon-32x32.png",
+      "PackagePath": "staticwebassets\\favicon_package_v0.16\\favicon-32x32.png"
+    },
+    {
+      "Id": "C:\\Users\\rough\\source\\repos\\THC CHURCH WEBSITE\\THC CHURCH WEBSITE\\wwwroot\\favicon_package_v0.16\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon_package_v0.16\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\rough\\source\\repos\\THC CHURCH WEBSITE\\THC CHURCH WEBSITE\\wwwroot\\favicon_package_v0.16\\mstile-150x150.png",
+      "PackagePath": "staticwebassets\\favicon_package_v0.16\\mstile-150x150.png"
+    },
+    {
+      "Id": "C:\\Users\\rough\\source\\repos\\THC CHURCH WEBSITE\\THC CHURCH WEBSITE\\wwwroot\\favicon_package_v0.16\\safari-pinned-tab.svg",
+      "PackagePath": "staticwebassets\\favicon_package_v0.16\\safari-pinned-tab.svg"
+    },
+    {
+      "Id": "C:\\Users\\rough\\source\\repos\\THC CHURCH WEBSITE\\THC CHURCH WEBSITE\\wwwroot\\favicon_package_v0.16\\site.webmanifest",
+      "PackagePath": "staticwebassets\\favicon_package_v0.16\\site.webmanifest"
+    },
+    {
+      "Id": "C:\\Users\\rough\\source\\repos\\THC CHURCH WEBSITE\\THC CHURCH WEBSITE\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\rough\\source\\repos\\THC CHURCH WEBSITE\\THC CHURCH WEBSITE\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\rough\\source\\repos\\THC CHURCH WEBSITE\\THC CHURCH WEBSITE\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\rough\\source\\repos\\THC CHURCH WEBSITE\\THC CHURCH WEBSITE\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\rough\\source\\repos\\THC CHURCH WEBSITE\\THC CHURCH WEBSITE\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\rough\\source\\repos\\THC CHURCH WEBSITE\\THC CHURCH WEBSITE\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\rough\\source\\repos\\THC CHURCH WEBSITE\\THC CHURCH WEBSITE\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\rough\\source\\repos\\THC CHURCH WEBSITE\\THC CHURCH WEBSITE\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\rough\\source\\repos\\THC CHURCH WEBSITE\\THC CHURCH WEBSITE\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\rough\\source\\repos\\THC CHURCH WEBSITE\\THC CHURCH WEBSITE\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\rough\\source\\repos\\THC CHURCH WEBSITE\\THC CHURCH WEBSITE\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\rough\\source\\repos\\THC CHURCH WEBSITE\\THC CHURCH WEBSITE\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\rough\\source\\repos\\THC CHURCH WEBSITE\\THC CHURCH WEBSITE\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\rough\\source\\repos\\THC CHURCH WEBSITE\\THC CHURCH WEBSITE\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\rough\\source\\repos\\THC CHURCH WEBSITE\\THC CHURCH WEBSITE\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\rough\\source\\repos\\THC CHURCH WEBSITE\\THC CHURCH WEBSITE\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\rough\\source\\repos\\THC CHURCH WEBSITE\\THC CHURCH WEBSITE\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\rough\\source\\repos\\THC CHURCH WEBSITE\\THC CHURCH WEBSITE\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\rough\\source\\repos\\THC CHURCH WEBSITE\\THC CHURCH WEBSITE\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\rough\\source\\repos\\THC CHURCH WEBSITE\\THC CHURCH WEBSITE\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\rough\\source\\repos\\THC CHURCH WEBSITE\\THC CHURCH WEBSITE\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\rough\\source\\repos\\THC CHURCH WEBSITE\\THC CHURCH WEBSITE\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\rough\\source\\repos\\THC CHURCH WEBSITE\\THC CHURCH WEBSITE\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\rough\\source\\repos\\THC CHURCH WEBSITE\\THC CHURCH WEBSITE\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\rough\\source\\repos\\THC CHURCH WEBSITE\\THC CHURCH WEBSITE\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\rough\\source\\repos\\THC CHURCH WEBSITE\\THC CHURCH WEBSITE\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\rough\\source\\repos\\THC CHURCH WEBSITE\\THC CHURCH WEBSITE\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\rough\\source\\repos\\THC CHURCH WEBSITE\\THC CHURCH WEBSITE\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\rough\\source\\repos\\THC CHURCH WEBSITE\\THC CHURCH WEBSITE\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\rough\\source\\repos\\THC CHURCH WEBSITE\\THC CHURCH WEBSITE\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\rough\\source\\repos\\THC CHURCH WEBSITE\\THC CHURCH WEBSITE\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\rough\\source\\repos\\THC CHURCH WEBSITE\\THC CHURCH WEBSITE\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\rough\\source\\repos\\THC CHURCH WEBSITE\\THC CHURCH WEBSITE\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\rough\\source\\repos\\THC CHURCH WEBSITE\\THC CHURCH WEBSITE\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\rough\\source\\repos\\THC CHURCH WEBSITE\\THC CHURCH WEBSITE\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\rough\\source\\repos\\THC CHURCH WEBSITE\\THC CHURCH WEBSITE\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\rough\\source\\repos\\THC CHURCH WEBSITE\\THC CHURCH WEBSITE\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\rough\\source\\repos\\THC CHURCH WEBSITE\\THC CHURCH WEBSITE\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\rough\\source\\repos\\THC CHURCH WEBSITE\\THC CHURCH WEBSITE\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\rough\\source\\repos\\THC CHURCH WEBSITE\\THC CHURCH WEBSITE\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\rough\\source\\repos\\THC CHURCH WEBSITE\\THC CHURCH WEBSITE\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\rough\\source\\repos\\THC CHURCH WEBSITE\\THC CHURCH WEBSITE\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\rough\\source\\repos\\THC CHURCH WEBSITE\\THC CHURCH WEBSITE\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\rough\\source\\repos\\THC CHURCH WEBSITE\\THC CHURCH WEBSITE\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\rough\\source\\repos\\THC CHURCH WEBSITE\\THC CHURCH WEBSITE\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\rough\\source\\repos\\THC CHURCH WEBSITE\\THC CHURCH WEBSITE\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\rough\\source\\repos\\THC CHURCH WEBSITE\\THC CHURCH WEBSITE\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\rough\\source\\repos\\THC CHURCH WEBSITE\\THC CHURCH WEBSITE\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\rough\\source\\repos\\THC CHURCH WEBSITE\\THC CHURCH WEBSITE\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\rough\\source\\repos\\THC CHURCH WEBSITE\\THC CHURCH WEBSITE\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\rough\\source\\repos\\THC CHURCH WEBSITE\\THC CHURCH WEBSITE\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\rough\\source\\repos\\THC CHURCH WEBSITE\\THC CHURCH WEBSITE\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\rough\\source\\repos\\THC CHURCH WEBSITE\\THC CHURCH WEBSITE\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\rough\\source\\repos\\THC CHURCH WEBSITE\\THC CHURCH WEBSITE\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\rough\\source\\repos\\THC CHURCH WEBSITE\\THC CHURCH WEBSITE\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\rough\\source\\repos\\THC CHURCH WEBSITE\\THC CHURCH WEBSITE\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\rough\\source\\repos\\THC CHURCH WEBSITE\\THC CHURCH WEBSITE\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\rough\\source\\repos\\THC CHURCH WEBSITE\\THC CHURCH WEBSITE\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Release\\net7.0\\staticwebassets\\msbuild.THC CHURCH WEBSITE.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Release\\net7.0\\staticwebassets\\msbuild.build.THC CHURCH WEBSITE.props",
+      "PackagePath": "build\\THC CHURCH WEBSITE.props"
+    },
+    {
+      "Id": "obj\\Release\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.THC CHURCH WEBSITE.props",
+      "PackagePath": "buildMultiTargeting\\THC CHURCH WEBSITE.props"
+    },
+    {
+      "Id": "obj\\Release\\net7.0\\staticwebassets\\msbuild.buildTransitive.THC CHURCH WEBSITE.props",
+      "PackagePath": "buildTransitive\\THC CHURCH WEBSITE.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

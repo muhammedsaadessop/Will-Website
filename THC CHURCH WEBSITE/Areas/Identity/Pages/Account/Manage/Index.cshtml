@@ -1,0 +1,73 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Profile";
+    ViewData["ActivePage"] = ManageNavPages.Index;
+}
+
+<h3>@ViewData["Title"]</h3>
+<partial name="_StatusMessage" for="StatusMessage" />
+<div class="row">
+    <div class="col-md-10">
+        <form id="profile-form" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
+            <div class="form-floating mb-3">
+                <input asp-for="Username" class="form-control" placeholder="Please choose your username." disabled />
+                <label asp-for="Username" class="form-label"></label>
+            </div>
+            <div class="form-floating mb-3">
+                <input asp-for="Input.PhoneNumber" class="form-control" placeholder="Please enter your phone number."/>
+                <label asp-for="Input.PhoneNumber" class="form-label"></label>
+                <span asp-validation-for="Input.PhoneNumber" class="text-danger"></span>
+            </div>
+            <div class="form-floating mb-3">
+                <input asp-for="Input.FirstName" class="form-control" placeholder="Please enter your first name." />
+                <label asp-for="Input.FirstName" class="form-label"></label>
+            </div>
+
+            <div class="form-floating mb-3">
+                <input asp-for="Input.Surname" class="form-control" placeholder="Please enter your surname." />
+                <label asp-for="Input.Surname" class="form-label"></label>
+            </div>
+            <div class="form-floating mb-3">
+                <input asp-for="Input.Centerssize" class="form-control" placeholder="Please enter your social position." />
+                <label asp-for="Input.Centerssize" class="form-label"></label>
+            </div>
+            <div class="form-floating mb-3">
+                <input asp-for="Input.Worshipname" class="form-control" placeholder="Please enter your church." />
+                <label asp-for="Input.Worshipname" class="form-label"></label>
+            </div>
+            <div class="form-floating mb-3">
+                <input asp-for="Input.Country" class="form-control" placeholder="Please enter your church." />
+                <label asp-for="Input.Country" class="form-label"></label>
+            </div>
+            <div class="form-floating mb-3">
+                <select asp-for="Input.ChurchID" class="form-select" aria-label="ChurchID">
+                    <option selected>Open this select menu</option>
+                    <option value="dwc72">Deliverance Worship Centre</option>
+                    <option value="mwc94">Magudu Worship Centre</option>
+                    <option value="elwc61">Emtin’ lomusha Worship Centre</option>
+                    <option value="twc61">Tsambokhulu Worship centre</option>
+                    <option value="kwc29">KaMandulo Worship Centre</option>
+                    <option value="kswc29">Khomba-so Worship Centre</option>
+                    <option value="lwc60">Likazi Worship Centre</option>
+                    <option value="ewc27">Elim Worship Centre</option>
+                    <option value="mwc27">Mananga Worship Centre</option>
+                    <option value="mbwc27">Masibekela Worship Centre</option>
+                    <option value="nwc27">Nhlabaville Worship Centre</option>
+                    <option value="nn6wc29">Nhlazatje No. 6 Worship Centre</option>
+                    <option value="twc29">Thokoza Worship Centre</option>
+                    <option value="mwc24">Mhlangatane Worship Centre</option>
+                    <option value="mtwc24">Mzinti/Tonga Worship Centre</option>
+                </select>
+                <label asp-for="Input.ChurchID" class="form-label">Church ID</label>
+            </div>
+
+            <button id="update-profile-button" type="submit" class="w-100 btn btn-lg btn-primary">Save</button>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

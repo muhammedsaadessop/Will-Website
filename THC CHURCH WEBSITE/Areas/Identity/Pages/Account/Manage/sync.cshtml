@@ -1,0 +1,16 @@
+﻿@page "{handler?}"
+@model THC_CHURCH_WEBSITE.Areas.Identity.Pages.Account.Manage.syncModel
+@{
+    ViewData["Title"] = "Sync Mobile Data:";
+
+}
+
+<h3>@ViewData["Title"]</h3>
+<partial name="_StatusMessage" for="StatusMessage" />
+
+
+    <form method="get">
+
+    <button type="submit" class=" btn btn-primary" value="Submit" asp-page="sync" asp-page-handler="Profile_click">Sync Profile Data</button>
+
+    </form>

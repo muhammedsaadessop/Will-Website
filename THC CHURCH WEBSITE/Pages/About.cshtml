@@ -1,0 +1,88 @@
+﻿@page "{handler?}"
+@model THC_CHURCH_WEBSITE.Pages.AboutModel
+@{
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body id="aboutus_body">
+    <div class="about_us_view">
+
+        <div class="Webcontainer">
+
+            @if (!string.IsNullOrEmpty(Model.StatusMessage))
+            {
+                <div class="alert alert-info alert-dismissible fade show" role="alert">
+                    @Model.StatusMessage
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+            }
+        </div>
+
+        <div class="text-center">
+            <h1 id="aboutus_heading_main" class="display-4">What is Harvest Tabernacle Church?</h1>
+        </div>
+
+        <h1 id="aboutus_heading">About Us</h1>
+        <p id="aboutus_p">
+            The Harvest Tabernacle Church (H.T.C.) is a Christian non-profit organization that
+            started in January 2003. The purpose for the establishment of this denomination
+            was a response to a call for a Church that would nurture believers to respond to a
+            call by God to join Him in His mission – to reconcile people with God and lead
+            them to maturity. So, this Church’s main aim is to serve as a channel to spread the
+            word of hope to all people in a special way.
+            <br />
+            Repositioning The Ministries Of Grace In The Church
+            The Bible tells us that God has given to each believer in the universal Church,
+            ministries that would be utilized to equip saints for service. But the Church has
+            ignored some of these ministries and as such; produced an immature Christian
+            society. The H.T.C. has taken upon itself the mandate to put in place all the
+            ministries and set them in full operation. It is for this reason H.T.C. has formulated
+            this constitution, which is a guide on how the work of God is to be facilitated.<br /> This
+            document also reflects on how governance is structured in this organism.
+            <br />
+            The Full Potential Of A Believer
+            It is trusted that God is going to expand His kingdom in the whole world through
+            this institution as each member of the H.T.C. discover his/ her ministry and develop
+            it to full potential.
+            Apostle B C Nsingwane
+            Founder and Lead Shepherd
+        </p>
+        <h2 id="aboutus_heading">Our Mission</h2>
+        <p id="aboutus_p_span">
+            The vehicle for the Church to attain the vision is:
+            <br>
+            <br />
+            To reveal the mystery of the Gospel to people through: <br /> <br />
+            <span style="margin-left: 20px;">Evangelism.</span><br />
+            <span style="margin-left: 20px;">Discipleship.</span><br />
+            <span style="margin-left: 20px;">Bible Study.</span><br />
+            <span style="margin-left: 20px;">Mission Praxis.</span><br />
+            <span style="margin-left: 20px;">Good Governance.</span><br />
+            <span style="margin-left: 20px;">Fellowships.</span><br />
+            <span style="margin-left: 20px;">Prayers.</span>
+        </p>
+        <h3 id="aboutus_heading">Our Vision</h3>
+        <p id="aboutus_p_last">
+            The Harvest Tabernacle Church is committed in:
+        </p>
+        <p id="aboutus_p_last_line">Establishing a matured Christian society.</p>
+
+
+        <br>
+        <br>
+        <br>
+
+
+    </div>
+
+
+</body>
+</html>

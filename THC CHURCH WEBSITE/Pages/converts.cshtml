@@ -1,0 +1,295 @@
+﻿@page "{handler?}"
+@model THC_CHURCH_WEBSITE.Pages.convertsModel
+@{
+}
+@* the above handler? means this page is allwoed to call back to the c# code to get handler methods for the buttons  *@
+@* models mean that they interact with the backend code to get and set data so do not remove  *@
+@* when naming yopur fields and buttons you havr to used name and id they work together do not reuse names unless the methods are completly seperate like different onclicks and ensure that there is conistency *@
+@* this code is done by muhammed saad essop st10090552 if theres any isues please contact him first *@
+<style>
+    #formDiv {
+        display: none;
+    }
+</style>
+@* this allows for notifcation messages such as missed fields and unselectedd spinners *@
+<div class="text-center">
+    <h1 class="display-4"> Converts Management</h1>
+    @if (string.IsNullOrEmpty(Model.Email) && !string.IsNullOrEmpty(Model.StatusMessage))
+    {
+        <div class="alert alert-info alert-dismissible fade show" role="alert">
+            @Model.StatusMessage
+           
+        </div>
+    }
+    else
+    {
+
+    }
+</div>
+@*     this is for counters for what is in the database it is a purely read only and lets the admins know what and how many stats are going on such as how many registered convertss *@
+<div class="form-container">
+    <form class=" stats">
+        <input readonly id="customcount" value="Converts: @Model.Convertscount" class="customcount"/>
+        <input readonly id="churchcount" value="CHURCHS: @Model.cCount" />
+       
+    </form>
+    @*        this calls the script to show the add pastor form howver i have not fixed the double click bug where the first click needs to be clicked tiwce for it to show odd bug *@
+    <button class="showuser" onclick="addForm()">Add converts</button>
+</div>
+
+<div id="formDiv" class="form-container">
+
+    <form method="get">
+        @*     this is the paster entry form  *@
+        @* the styling used here is the microsot profensional styling in form floating mb3 change accordingly  *@
+        @* i use the class per the project theme which is used for the profile  *@
+        <legend class="sub-legend">converts ENTRY FORM:</legend>
+        <hr />
+        <div class="form-floating col-sm-6 mb-3">
+            <input class="form-control" placeholder="Please choose your username." id="email" name="email" type="email" required />
+            <label class="form-label">Email</label>
+        </div>
+        <div class="form-floating col-sm-6 mb-3">
+            <input class="form-control" placeholder="Please enter your phone number." id="phone" name="phone" type="text" pattern="[0-9]{7,}" required />
+            <label class="form-label">Phone Number</label>
+            <span class="text-danger"></span>
+        </div>
+        <div class="form-floating col-sm-6 mb-3">
+            <input class="form-control" placeholder="Please enter your first name." id="fnames" name="fnames" minlength="4" required />
+            <label class="form-label">FirstName</label>
+        </div>
+
+        <div class="form-floating col-sm-6 mb-3">
+            <input class="form-control" placeholder="Please enter your surname." id="snames" name="snames" minlength="4" required />
+            <label class="form-label">Surname</label>
+        </div>
+        <div class="form-floating col-sm-6 mb-3">
+            <input class="form-control" placeholder="Please enter your social position." id="gender" name="gender" type="text" required minlength="4" />
+            <label class="form-label">Gender</label>
+        </div>
+        <div class="form-floating col-sm-6 mb-3">
+            <input class="form-control" placeholder="Please enter your church." id="mstatus" name="mstatus" minlength="5" required />
+            <label class="form-label">Marital Status</label>
+        </div>
+
+
+        @*             do not change the values here as these are as per the database *@
+        <div class="form-floating col-sm-6 mb-3">
+            <select class="form-select" aria-label="ChurchID" id="ChurchId" name="ChurchId" required>
+                <option selected>Open this select menu</option>
+                <option value="dwc72">Deliverance Worship Centre</option>
+                <option value="mwc94">Magudu Worship Centre</option>
+                <option value="elwc61">Emtin’ lomusha Worship Centre</option>
+                <option value="twc61">Tsambokhulu Worship centre</option>
+                <option value="kwc29">KaMandulo Worship Centre</option>
+                <option value="kswc29">Khomba-so Worship Centre</option>
+                <option value="lwc60">Likazi Worship Centre</option>
+                <option value="ewc27">Elim Worship Centre</option>
+                <option value="mwc27">Mananga Worship Centre</option>
+                <option value="mbwc27">Masibekela Worship Centre</option>
+                <option value="nwc27">Nhlabaville Worship Centre</option>
+                <option value="nn6wc29">Nhlazatje No. 6 Worship Centre</option>
+                <option value="twc29">Thokoza Worship Centre</option>
+                <option value="mwc24">Mhlangatane Worship Centre</option>
+                <option value="mtwc24">Mzinti/Tonga Worship Centre</option>
+            </select>
+            <label class="form-label">Church ID</label>
+        </div>
+        <button type="submit" class="w-50 btn btn-lg btn-primary" value="Submit" asp-page="converts" asp-page-handler="AddConverts_click">Add New converts</button>
+
+    </form>
+</div>
+@*     do not remove this as it hides the forms and shows on button click for adding the convertss *@
+<script>
+    function addForm() {
+        var PastorForm = document.getElementById("formDiv");
+        if (PastorForm.style.display === "none") {
+            PastorForm.style.display = "block";
+        } else {
+            PastorForm.style.display = "none";
+        }
+    }
+
+</script>
+@*     these text boxes act as temp variables to save the data to the database , note they dont keep data so theres no way to hack them *@
+<div class="form-stuff">
+    <form method="get" class="test1s">
+        <input id="id" name="id" class="t1" readonly hidden />
+        <input id="mname" name="mname" class="t1" readonly hidden />
+        <input id="msname" name="msname" class="t1" readonly hidden />
+        <input id="pnum" name="pnum" class="t1" readonly hidden />
+        <input id="mmail" name="mmail" class="t1" readonly hidden />
+        <input id="new" name="new" class="t1" readonly hidden />
+        <input id="cname" name="cname" class="t1" readonly hidden />
+        <input id="maritals" name="maritals" class="t1" readonly hidden />
+
+        <input id="deletentry" name="deletentry" readonly />
+        <button id="delete-btn" type="submit" value="Submit" asp-page="converts" asp-page-handler="Delete_Click">DELETE</button>
+        <button id="update-btn" type="submit" value="Submit" asp-page="converts" asp-page-handler="Update_Click">Save</button>
+        <button id="download-btn" type="submit" value="Submit" asp-page="converts" asp-page-handler="Download_Click">DOWNLOAD</button>
+        @*
+        this is for the filtering as per the the columns *@
+    </form>
+    <form method="get" class="filter">
+        <input type="text" id="filters" name="filters"  />
+        <select id="fliterspin" name="filterspin">
+            <option value="">--Select--</option>
+            <option value="Cid">Converts ID</option>
+            <option value="churchid">Church ID</option>
+            <option value="CName">First Name</option>
+            <option value="Csurname"> Surname</option>
+            <option value="WorshipName">Worship name</option>
+            <option value="Email">Email</option>
+            <option value="Pnumber">Phone Number</option>
+            <option value="Gender">Gender</option>
+
+
+        </select>
+        <button id="filter-btn" type="submit" value="Submit" asp-page="converts" asp-page-handler="Filter_Click">Filter</button>
+    </form>
+
+    <form class="print-textarea " method="get" spellcheck="false">
+        <table id="custom-table" class="form-table" spellcheck="false">
+            <thead>
+                <tr>
+                    @*
+                    this displays the data from the database in order of columns *@
+                    <th spellcheck="false" id="pid"><button type="submit" value="Submit" asp-page="converts" asp-page-handler="SortId_Click" class="test">@Model.ProfileId</button></th>
+                    <th id="fname"> <button type="submit" value="Submit" asp-page="converts" asp-page-handler="SortFname_Click" class="test">@Model.Firstname</button></th>
+                    <th id="sname"><button type="submit" value="Submit" asp-page="converts" asp-page-handler="SortSurname_Click" class="test">@Model.surname</button></th>
+                    <th id="number"> <button type="submit" value="Submit" asp-page="converts" asp-page-handler="SortNumber_Click" class="test">@Model.phonenumber</button></th>
+                    <th id="social">  <button type="submit" value="Submit" asp-page="converts" asp-page-handler="SortEmail_Click" class="test">@Model.email</button></th>
+                    <th id="converts"> <button type="submit" value="Submit" asp-page="converts" asp-page-handler="SortGender_Click" class="test">@Model.Gender</button></th>
+                    <th id="country">  <button type="submit" value="Submit" asp-page="converts" asp-page-handler="SortCenter_Click" class="test">@Model.Worshipname</button></th>
+                    <th id="cmaritals">  <button type="submit" value="Submit" asp-page="converts" asp-page-handler="SortMaritals_Click" class="test">@Model.Marriagestatus</button></th>
+                </tr>
+            </thead>
+            <tbody>
+                @* this prints the data from the getter and setter after the sql has been executed in the backend code *@
+                @if (Model.prodRows != null)
+                {
+                    foreach (var farmrow in Model.prodRows)
+                    {
+                        if (farmrow != null)
+                        {
+                            <tr>
+                                @foreach (var value in farmrow)
+                                {
+                                    if (value != null)
+                                    {
+                                        <td contenteditable>@value</td>
+                                    }
+                                }
+                            </tr>
+                        }
+                    }
+                }
+
+            </tbody>
+        </table>
+
+
+        @*
+        use if neccesray for error handling *@
+        <legend>@Model.Error</legend>
+    </form>
+</div>
+
+
+
+<!-- Include jQuery from a CDN -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+@*     this script is made of two parts the first gets and saves the edits from the table while the second makes the id clickable for deletion *@
+<script>
+    const changedValues = {};
+    const MID = document.querySelector('#id');
+    const name = document.querySelector('#mname');
+    const surname = document.querySelector('#msname');
+    const phonenumber = document.querySelector('#pnum');
+    const email = document.querySelector('#mmail');
+    const genders = document.querySelector('#new');
+    const deletefield = document.querySelector('#deletentry');
+    const churchname = document.querySelector('#cname');
+    const cmstatus = document.querySelector('#maritals');
+    document.querySelectorAll('table tbody td').forEach(cell => {
+        cell.addEventListener('input', () => {
+
+            const rowIndex = cell.parentNode.rowIndex;
+            const colIndex = cell.cellIndex;
+
+
+            const value = cell.textContent;
+
+
+            const convertsid = cell.parentNode.querySelector('td').textContent;
+            const convertsname = cell.parentNode.querySelector('td:nth-child(2)').textContent;
+            const convertssurname = cell.parentNode.querySelector('td:nth-child(3)').textContent;
+            const convertspnumber = cell.parentNode.querySelector('td:nth-child(4)').textContent;
+            const convertsemail = cell.parentNode.querySelector('td:nth-child(5)').textContent;
+            const gender2 = cell.parentNode.querySelector('td:nth-child(6)').textContent;
+            const cname = cell.parentNode.querySelector('td:nth-child(7)').textContent;
+            const stuff = cell.parentNode.querySelector('td:nth-child(8)').textContent;
+
+            if (!changedValues[rowIndex]) {
+                changedValues[rowIndex] = {};
+            }
+            changedValues[rowIndex][colIndex] = value;
+            changedValues[rowIndex][0] = convertsid;
+            console.log(value)
+            console.log(convertsid)
+            console.log(convertsname)
+            console.log(convertssurname)
+            console.log(gender2)
+            MID.value = convertsid;
+            name.value = convertsname;
+            surname.value = convertssurname;
+            deletefield.value = convertsid;
+            phonenumber.value = convertspnumber;
+            email.value = convertsemail;
+            genders.value = gender2;
+            churchname.value = cname;
+            cmstatus.value = stuff;
+
+        });
+    });
+
+
+    const clickedCells = {};
+
+
+    document.querySelectorAll('table tbody td:nth-child(1)').forEach(cell => {
+        cell.addEventListener('click', () => {
+
+            const rowIndex = cell.parentNode.rowIndex;
+
+            if (clickedCells[rowIndex]) {
+
+                deletefield.value = '';
+
+
+                clickedCells[rowIndex] = false;
+            } else {
+
+                deletefield.value = cell.textContent;
+
+
+                clickedCells[rowIndex] = true;
+            }
+        });
+    });
+
+
+
+</script>
+
+<script type="text/javascript">
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function () {
+        var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = 'https://embed.tawk.to/64f5939ea91e863a5c117bb7/1h9fkh9ha';
+        s1.charset = 'UTF-8';
+        s1.setAttribute('crossorigin', '*');
+        s0.parentNode.insertBefore(s1, s0);
+    })();
+</script>

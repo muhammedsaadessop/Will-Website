@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\THC CHURCH WEBSITE.props" />
+</Project>

@@ -1,0 +1,159 @@
+﻿@page "{handler?}"
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+
+}
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head class="head">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href=" https://assets.api.bible/css/scripture-styles.css">
+
+
+    <div class="Webcontainer">
+        <h1 class="Webheader">Welcome to the Harvest Tabernacle Church</h1>
+        <p class="Websubheader">Establishing A Matured Christian Society</p>
+    </div>
+
+    <div class="verse">
+        <h2>~Verse of the day~</h2>
+        <p>@Model.DailyVerse</p>
+    </div>
+
+
+    <!-- Events Schedule Section -->
+    <div class="events">
+        <h2 style="text-align: center; font-size:4em;font-weight:bold;text-align:center;">Events Schedule</h2>
+        <h3 style="text-align: center;">@DateTime.Now.ToString("MMMM yyyy")</h3>
+        <div id="calendar" style="overflow-y: scroll; height: 700px;"></div>
+    </div>
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.9/index.global.min.js'></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var calendarVal = document.getElementById('calendar');
+            calendarVal.style.maxHeight = '500px'; //
+            calendarVal.style.overflowY = 'auto';
+
+
+            var events = @Html.Raw(Json.Serialize(Model.Events.Select(e => new {
+                title = e["name"],
+                start = e["date"],
+                endTime = e["date"],
+                church = e["church"],
+                start_time = e["start_time"],
+                end_time = e["end_time"],
+                address = e["address"]
+                })));
+
+            var calendar = new FullCalendar.Calendar(calendarVal, {
+                initialView: 'dayGridMonth',
+                events: events,
+
+                eventContent: function (arg) {
+                    var DomNodes = [];
+                    var title = document.createElement('div');
+                    title.innerHTML = arg.event.title;
+                    DomNodes.push(title);
+
+                    var eventDet = document.createElement('div');
+                    eventDet.style.fontSize = '0.75em';
+
+                    eventDet.innerHTML =
+                        'Church: ' + arg.event.extendedProps.church + '<br>' +
+                        'Start Time: ' + arg.event.extendedProps.start_time + '<br>' +
+                        'End Time: ' + arg.event.extendedProps.end_time + '<br>' +
+                        'Address: ' + arg.event.extendedProps.address;
+                    DomNodes.push(eventDet);
+
+                    return { domNodes: DomNodes };
+                }
+            });
+            calendar.render();
+
+
+        });
+    </script>
+
+
+</head>
+<body class="news-body">
+
+
+
+    <main class="container">
+        <div id="verse-content" class="verse-container"></div>
+    </main>
+
+
+    <!-- News Feed Section -->
+    <div class="news">
+        <div style="overflow-y: scroll; height: 700px; margin-top: 50px;">
+
+            <legend style="font-size: 4em; font-weight: bold; text-align: center;">News Feed</legend>
+
+
+            @{
+                var posts = await FacebookPosts.GetFacebookPostsAsync();
+            }
+
+            @if (posts != null)
+            {
+                @foreach (var post in posts)
+                {
+                    <div class="fb-post">
+                        <div class="fb-post-header">
+                            @if (post["from"]?["picture"]?["data"]?["url"] != null)
+                            {
+                                <img class="fb-post-profile-picture" src="@post["from"]["picture"]["data"]["url"]" alt="Profile Picture">
+                            }
+                            <div class="fb-post-info">
+                               
+                             
+                            </div>
+                        </div>
+                        <div class="fb-post-content">
+                            <div class="fb-post-caption">@post["message"]</div>
+                            @if (post["full_picture"] != null)
+                            {
+                                <div class="fb-post-image-container">
+                                    <img class="fb-post-image" src="@post["full_picture"]" alt="Post Image">
+                                </div>
+                            }
+                        </div>
+                        <div class="fb-post-footer">
+                        </div>
+                    </div>
+
+                }
+            }
+            else
+            {
+                <p>Sorry, there was an error retrieving posts from Facebook.</p>
+            }
+        </div>
+    </div>
+
+</body>
+</html>
+
+
+
+<script type="text/javascript">
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function () {
+        var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = 'https://embed.tawk.to/64f5939ea91e863a5c117bb7/1h9fkh9ha';
+        s1.charset = 'UTF-8';
+        s1.setAttribute('crossorigin', '*');
+        s0.parentNode.insertBefore(s1, s0);
+    })();
+</script>
